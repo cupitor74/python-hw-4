@@ -9,7 +9,7 @@ def twoSum(nums, target):
                 data = pairs.copy()
                 fullData.append(data)
                 pairs.clear()
-    print(fullData)
+    print(fullData[0])
 
 def twoSumMapWithoutDouble(nums, target):
     mapList = dict()
@@ -21,13 +21,13 @@ def twoSumMapWithoutDouble(nums, target):
             return [i, mapList[diff]]
 
 
-twoSum([1, 2, 3, 5, 9, 8, 3, 1], 4)        # [[0, 2], [0, 6], [2, 7], [6, 7]]
+twoSum([1, 2, 3, 4, 5, 9, 8], 9)        # [[0, 2], [0, 6], [2, 7], [6, 7]]
 twoSum([2, 7, 11, 15], 9)   # [0, 1]
 twoSum([3, 2, 4], 6)        # [1, 2]
 twoSum([3, 3], 6)           # [0, 1]
 
 
-twoSumMapWithoutDouble([1, 2, 3, 5, 9, 8], 4)
-twoSumMapWithoutDouble([2, 7, 11, 15], 9)   # [0, 1]
-twoSumMapWithoutDouble([3, 2, 4], 6)        # [1, 2]
-twoSumMapWithoutDouble([3, 3], 6)           # [0, 1]
+# twoSumMapWithoutDouble([1, 2, 3, 5, 9, 8], 4)
+# twoSumMapWithoutDouble([2, 7, 11, 15], 9)   # [0, 1]
+# twoSumMapWithoutDouble([3, 2, 4], 6)        # [1, 2]
+# twoSumMapWithoutDouble([3, 3], 6)           # [0, 1]
